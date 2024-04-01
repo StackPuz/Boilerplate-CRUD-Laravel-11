@@ -1,0 +1,176 @@
+/* Layout */
+
+.wrapper {
+    display: flex;
+}
+#sidebar_toggle {
+    display: none;
+}
+#sidebar {
+    display: none;
+    min-width: 200px;
+}
+#sidebar_toggle:checked + #sidebar {
+    display: block;
+}
+@media (min-width: 992px) {
+    #sidebar {
+        display: block;
+    }
+}
+@media (min-width: 992px) {
+    #sidebar_toggle:checked + #sidebar {
+        display: none;
+    }
+}
+#sidebar a {
+    display: block;
+    box-sizing: border-box;
+    padding: 15px 0 0 15px;
+    height: 50px;
+    color: inherit;
+}
+#sidebar a.active {
+    color: white;
+}
+#sidebar a:hover {
+    text-decoration: none;
+    background: gainsboro;
+}
+#sidebar > a, #body > nav {
+    height: 60px;
+    box-sizing: border-box;
+}
+#body {
+    width: 100%;
+}
+#body > .content {
+    padding: 2em 0 1em 0;
+    border-left: 1px solid gainsboro;
+    box-sizing: border-box;
+    min-height: calc(100vh - 60px);
+}
+nav span {
+    margin-left: 5px;
+}
+select[readonly], .readonly {
+    pointer-events: none;
+}  
+
+/* Layout fix */
+
+.navbar .dropdown-menu {
+    position: absolute;
+}
+.navbar i {
+    font-size: 16px;
+}
+.navbar label {
+    cursor: pointer;
+}
+.navbar-nav {
+    flex-direction: row;
+}
+.nav-link {
+    padding-left: 16px!important;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* Other fix */
+
+.btn {
+          margin-right: 0.25rem;
+      }
+      .btn-group > .btn {
+          margin-right: 0;
+      }
+      .form-check {
+          padding: 0 0 1rem 2.25rem;
+      }
+      a {
+        text-decoration: none;
+      }
+
+/* Index page */
+
+#searchbar_toggle {
+    display: none;
+}
+#searchbar {
+    display: none;
+}
+@media (min-width: 992px) {
+    #searchbar {
+        display: flex;
+    }
+}
+@media (max-width: 991px) {
+    #searchbar_toggle:checked + #searchbar {
+        display: block;
+    }
+}
+th a {
+    display:block;
+    text-decoration: none;
+}
+th a:hover {
+    text-decoration: none;
+}
+th.sort:hover {
+    background: whitesmoke;
+}
+th.sort:before {
+    float: right;
+    color: lightgray;
+}
+th.sort.asc:before {
+    content: '▲';
+}
+th.sort.desc:before {
+    content: '▼';
+}
+td > form {
+    display: inline;
+}
+.img-list {
+    width: 40px;
+}
+
+/* Detail page */
+
+.img-item {
+    border: 1px solid lightgray;
+    max-width: 100%;
+}
+
+/* Oher page */
+
+.center-container {
+    height: 100vh;
+}
+.center-container.home {
+    height: 80vh;
+}
+.center-container > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+}
+.card-width {
+    width: 300px;
+}
+i.home {
+    font-size: 100px;
+    opacity: 0.1;
+}
+i.login {
+    margin: 0 auto;
+    display: block;
+    font-size: 100px;
+    width: 100px;
+    line-height: 100px;
+    color: lightgray;
+}
