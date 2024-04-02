@@ -22,11 +22,10 @@ Checkout the live demo at https://demo.stackpuz.com
 
 ## Installation
 1. Clone this repository. `git clone https://github.com/stackpuz/Backend-CRUD-Laravel-11.git .`
-2. Change directory. `cd Backend-CRUD-Laravel-11`
-3. Install the dependencies. `composer install`
-4. Create the symbolic link. `php artisan storage:link`
-5. Create a new database and run [/database.sql](/database.sql) script to create tables and import data.
-6. Edit the database configuration in [/.env](/.env) file.
+2. Install the dependencies. `composer install`
+3. Create the symbolic link. `php artisan storage:link`
+4. Create a new database and run [/database.sql](/database.sql) script to create tables and import data.
+5. Edit the database configuration in [/.env](/.env) file.
     ```
     DB_CONNECTION=mysql
     DB_HOST=localhost
