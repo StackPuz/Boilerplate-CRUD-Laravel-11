@@ -19,7 +19,7 @@
         <input id="sidebar_toggle" type="checkbox" />
         <nav id="sidebar">
             <a href="/" class="bg-light border-bottom">
-                <h4>Project1</h4>
+                <h4>StackPuz</h4>
             </a>
             <ul class="list-unstyled">
                 <li>
