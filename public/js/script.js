@@ -132,6 +132,19 @@ function deleteItem(e) {
     }
 }
 
+function submitForm() { //fix nested form issue in some Edit View
+    while (document.querySelector('form')) {
+        document.querySelector('form').remove()
+    }
+    let div = document.querySelector('div[data-method]')
+    let form = document.createElement('form')
+    form.method = div.getAttribute('data-method')
+    form.action = div.getAttribute('data-action')
+    div.parentNode.prepend(form)
+    form.append(div)
+    form.submit()
+}
+
 function validateForm() {
     let password = document.querySelector('input[type=password]:not([data-match])')
     let match = document.querySelector('[data-match]')

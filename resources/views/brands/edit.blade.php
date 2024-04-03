@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <form method="post" action="/brands/{{$brand->id}}?ref={{urlencode($ref)}}">
+            <div data-method="post" data-action="/brands/{{$brand->id}}?ref={{urlencode($ref)}}">
                 @method("PATCH")
                 @csrf
                 <div class="row">
@@ -46,10 +46,10 @@
                     </div>
                     <div class="col-12">
                         <a class="btn btn-sm btn-secondary" href="{{$ref}}">Cancel</a>
-                        <button class="btn btn-sm btn-primary">Submit</button>
+                        <button class="btn btn-sm btn-primary" type="button" onclick="submitForm()">Submit</button>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
