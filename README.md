@@ -1,5 +1,5 @@
-# Backend-CRUD-Laravel-11
-Boilerplate Backend CRUD Web App created with Laravel 11 by [StackPuz](https://stackpuz.com).
+# Boilerplate-CRUD-Laravel-11
+Boilerplate CRUD Web App created with Laravel 11 by [StackPuz](https://stackpuz.com).
 
 ## Demo
 Checkout the live demo at https://demo.stackpuz.com
@@ -21,7 +21,7 @@ Checkout the live demo at https://demo.stackpuz.com
 - MySQL 5.7
 
 ## Installation
-1. Clone this repository. `git clone https://github.com/stackpuz/Backend-CRUD-Laravel-11.git .`
+1. Clone this repository. `git clone https://github.com/stackpuz/Boilerplate-CRUD-Laravel-11.git .`
 2. Install the dependencies. `composer install`
 3. Create the symbolic link. `php artisan storage:link`
 4. Create a new database and run [/database.sql](/database.sql) script to create tables and import data.
